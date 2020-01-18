@@ -17,7 +17,11 @@ namespace LibreHardwareMonitor.UI
             Font = SystemFonts.MessageBoxFont;
             label3.Text = "Version " + Application.ProductVersion;
             projectLinkLabel.Links.Remove(projectLinkLabel.Links[0]);
-            projectLinkLabel.Links.Add(0, projectLinkLabel.Text.Length, "https://github.com/LibreHardwareMonitor/LibreHardwareMonitor");
+            projectLinkLabel.Links.Add(0, projectLinkLabel.Text.Length, "https://github.com/DeltaDesignRus/LibreHardwareMonitor");
+
+            PCdisplayLinkLabel.Links.Remove(PCdisplayLinkLabel.Links[0]);
+            PCdisplayLinkLabel.Links.Add(0, PCdisplayLinkLabel.Text.Length, "https://github.com/AlexGyver/PCdisplay");
+
             licenseLinkLabel.Links.Remove(licenseLinkLabel.Links[0]);
             licenseLinkLabel.Links.Add(0, licenseLinkLabel.Text.Length, "https://www.mozilla.org/en-US/MPL/2.0/");
         }
@@ -29,6 +33,11 @@ namespace LibreHardwareMonitor.UI
                 Process.Start(new ProcessStartInfo(e.Link.LinkData.ToString()));
             }
             catch { }
+        }
+
+        private void label1_Click(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

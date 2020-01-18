@@ -13,6 +13,7 @@ using LibreHardwareMonitor.Hardware;
 
 namespace LibreHardwareMonitor.Utilities
 {
+
     public class PersistentSettings : ISettings
     {
         private readonly IDictionary<string, string> _settings = new Dictionary<string, string>();

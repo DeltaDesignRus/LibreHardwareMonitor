@@ -3,6 +3,8 @@
 // Copyright (C) LibreHardwareMonitor and Contributors
 // All Rights Reserved
 
+using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Reflection;
